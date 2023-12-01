@@ -1,0 +1,18 @@
+.BtnRegister{
+    -fx-background-color: #008080;
+    -fx-background-radius: 50px;
+    -fx-cursor: HAND;
+}
+.BtnRegister:hover{
+    -fx-background-color: #A9F9D7;
+    -fx-text-fill: black;
+}
+
+.BtnCreateRegister{
+    -fx-background-color: transparent;
+    -fx-font-weight: none;
+    -fx-cursor: HAND;
+}
+.BtnCreateRegister:hover{
+    -fx-text-fill: white;
+}

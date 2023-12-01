@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="532.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmaciaflores3.Controllers.RegisterController">
+   <children>
+      <Pane prefHeight="588.0" prefWidth="532.0" style="-fx-background-color: black;">
+         <children>
+            <Pane layoutY="48.0" prefHeight="103.0" prefWidth="532.0" style="-fx-background-color: #008080;">
+               <children>
+                  <Label layoutX="97.0" layoutY="2.0" prefHeight="103.0" prefWidth="322.0" text="REGISTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="70.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="125.0" layoutY="160.0" prefHeight="32.0" prefWidth="103.0" text="Nombre" textFill="#57fae7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="230.0" prefHeight="32.0" prefWidth="103.0" text="Apellido" textFill="#57fae7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="294.0" text="Email" textFill="#57fae7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="RNombre" layoutX="115.0" layoutY="192.0" prefHeight="25.0" prefWidth="272.0" promptText="Nombre" style="-fx-background-color: #000000; -fx-text-fill: white;" />
+            <TextField fx:id="RApellido" layoutX="115.0" layoutY="262.0" prefHeight="25.0" prefWidth="272.0" promptText="Apellido" style="-fx-background-color: #000000; -fx-text-fill: white;" />
+            <TextField fx:id="RCorreo" layoutX="115.0" layoutY="326.0" prefHeight="25.0" prefWidth="272.0" promptText="email@gmail" style="-fx-background-color: #000000; -fx-text-fill: white;" />
+            <Button layoutX="105.0" layoutY="445.0" mnemonicParsing="false" onAction="#RegisterEmployer" prefHeight="96.0" prefWidth="322.0" styleClass="BtnRegister" text="Create">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Label layoutX="125.0" layoutY="358.0" text="Cargo" textFill="#57fae7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="RCargoBox" layoutX="125.0" layoutY="390.0" prefHeight="25.0" prefWidth="272.0" />
+            <Separator layoutX="124.0" layoutY="217.0" prefHeight="3.0" prefWidth="208.0" style="-fx-background-color: #A9F9D7;" />
+            <Separator layoutX="124.0" layoutY="286.0" prefHeight="3.0" prefWidth="208.0" style="-fx-background-color: #A9F9D7;" />
+            <Separator layoutX="124.0" layoutY="350.0" prefHeight="3.0" prefWidth="272.0" style="-fx-background-color: #A9F9D7;" />
+            <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/volver%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="AdminNext" fitHeight="41.0" fitWidth="40.0" layoutX="5.0" layoutY="-1.0" onMouseClicked="#goNext" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/volver.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

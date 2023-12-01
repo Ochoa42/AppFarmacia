@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="651.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.farmaciaflores3.Controllers.LoginController">
+   <children>
+      <Pane prefHeight="511.0" prefWidth="651.0" style="-fx-background-color: black;">
+         <children>
+            <Pane prefHeight="511.0" prefWidth="349.0" style="-fx-background-color: #008080;">
+               <children>
+                  <ImageView fitHeight="309.0" fitWidth="314.0" layoutX="26.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../ProyectosAuxi/toList/src/Resources/images/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="register" layoutX="8.0" layoutY="410.0" mnemonicParsing="false" onAction="#BtnRegisterLogin" prefHeight="26.0" prefWidth="334.0" styleClass="BtnCreateRegister" text="Do you not have an account? SignIn" />
+               </children>
+            </Pane>
+            <Button layoutX="379.0" layoutY="386.0" mnemonicParsing="false" onAction="#OnClickBtnLogin" prefHeight="83.0" prefWidth="248.0" styleClass="BtnRegister" text="Iniciar Session" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="400.0" layoutY="142.0" text="Usuario" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="256.0" text="Contraseña" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TxtUser" layoutX="392.0" layoutY="172.0" prefHeight="25.0" prefWidth="221.0" promptText="Nombre" style="-fx-background-color: #000000; -fx-text-fill: white;" />
+            <PasswordField fx:id="TxtPassword" layoutX="394.0" layoutY="300.0" prefHeight="25.0" prefWidth="221.0" promptText="Password" style="-fx-background-color: #000000;" />
+            <Label layoutX="404.0" layoutY="32.0" prefHeight="92.0" prefWidth="202.0" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font size="63.0" />
+               </font>
+            </Label>
+            <Separator layoutX="400.0" layoutY="197.0" prefHeight="3.0" prefWidth="208.0" style="-fx-background-color: #A9F9D7;" />
+            <Separator layoutX="398.0" layoutY="325.0" prefHeight="3.0" prefWidth="208.0" style="-fx-background-color: #A9F9D7;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
